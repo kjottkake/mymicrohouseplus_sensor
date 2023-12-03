@@ -1,5 +1,6 @@
 import math
 import json
+import time
 import datetime
 from datetime import datetime
 from sense_hat import SenseHat
@@ -53,7 +54,7 @@ def get_and_save_sensor_data():
         print(f"Data saved: {sensor_data}")
 
         # Wait for 30 seconds before the next read
-        time.sleep(30)
+        time.sleep(1)
 
 # Start the data collection and saving process
 get_and_save_sensor_data()
