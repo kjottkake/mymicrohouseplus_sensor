@@ -42,7 +42,7 @@ def get_and_save_sensor_data():
 
         sea_level_pressure = 1013.25  # Standard sea level pressure in hPa or millibars
         measured_pressure = pressure  # Replace with the measured atmospheric pressure in hPa or millibars
-        MeasuredAltitude = calculate_altitude(measured_pressure, sea_level_pressure)
+        MeasuredAltitude = int(calculate_altitude(measured_pressure, sea_level_pressure))
 
         # Prepare data with timestamp
         sensor_data = {
